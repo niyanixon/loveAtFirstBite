@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#FF9C73,#FBD288); 
+    background-repeat: no-repeat;
+    color: #FF4545;
+    text-align: center;
+    font-family:"Potta One", system-ui;
+    height: 1000px;
+}
+/* HEADER */
+header{
+    height: 400px;
+    width: 90%;
+    background: #FBD288;
+    border-radius: 10px;
+    margin: auto;
+}
+h1{
+    font-size: 65px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+p{
+    margin:0;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.resturantInput{
+    height: 50px;
+    width: 25%;
+    border: 2px solid #FF9C73;
+    border-radius: 10px;
+    text-align: center;
+    background: white;
+    font-family:"Potta One", system-ui;
+    color: #FF4545;
+}
+::placeholder{
+    color: #FF4545;
+}
+button{
+    height: 50px;
+    border: 2px solid #FF9C73;
+    border-radius: 10px;
+    width: 15%;
+    background: white;
+    font-family:"Potta One", system-ui;
+    color: #FF4545;
+}
+button:hover{
+    background: #FF4545;
+    color: white;
+    cursor: pointer;
+}
+
+/* QUESTIONS */
+.middle{
+    height: 175px;
+    width: 100%;
+    margin-top: 20px;
+}
+h3{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.price{
+    border: 2px solid #FF9C73;
+    height: 100px;
+    width: 20%;
+    background: #FF4545;
+    border-radius: 10px;
+    float: left;
+    margin-left: 300px;
+    margin-right: 50px;
+    color: white;
+}
+
+.food{
+    border: 2px solid #FF9C73;
+    height: 100px;
+    width: 20%;
+    background: #FF4545;
+    border-radius: 10px;
+    float: left;
+    margin-right: 50px;
+    color: white;
+}
+.style{
+    border: 2px solid #FF9C73;
+    height: 100px;
+    width: 20%;
+    background: #FF4545;
+    border-radius: 10px;
+    float: left;
+    color: white;
+}
+.filter{
+    
+    text-align: center;
+    clear: both;
+}
+/* MAIN SECTION */
+.cityPic{
+    margin-top: 20px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* MEDIA Q */
+@media screen and (max-width:1205px) {
+    .price{
+        margin-left: 170px;
+    }
+    label{
+        font-size: 13px;
+    }
+    h3{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1007px){
+    .price,.food,.style{
+        height: 120px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 970px){
+    .price{
+        margin-left:100px;
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 800px){
+    .price{
+        margin-left: 70px;
+    }
+    .price,.food{
+        margin-right: 30px;
+    }
+    .price,.food,.style{
+        width: 25%;
+    }
+    label{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        height: 370px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 13px;
+    }
+    button{
+        width: 20%;
+    }
+    h3{
+        font-size: 13px;
+    }
+    .price{
+        margin-left: 20px;
+    }
+    .price,.food{
+        margin-right: 20px;
+    }
+    .price,.food,.style{
+        width: 27%;
+        height: 130px;
+    }
+}
