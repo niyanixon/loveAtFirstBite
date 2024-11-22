@@ -1,4 +1,6 @@
 ## LOVE AT FIRST BITE
+<a href="https://loveatfirstbite.onrender.com/" rel="love at first bite">Visit Site</a>
+
 ![Screenshot 2024-11-20 at 7 03 12 PM](https://github.com/user-attachments/assets/588c6f38-d239-476e-a28c-a6c2410cc032)
 <p>This application helps users discover restaurant options tailored to their preferences by answering a series of simple questions. Users can select their price range, choose a food category such as Italian, Mexican, or Asian, and specify their preferred dining style. Based on their responses, the app generates personalized restaurant recommendations in one of four cities: Boston, Philadelphia, Washington D.C., or New York. It’s the perfect tool for finding the ideal dining experience in these major cities!</p>
 
