@@ -1,0 +1,482 @@
+*{
+    box-sizing: border-box;
+}
+/*========================== CITY EJS ============================== */
+.rest{
+    background: #FEFAE0;
+    color: #798645;
+    text-align: center;
+    font-family: "Rakkas", serif;
+    height: 1000px;
+}
+.cityHeader{
+    background: none;
+    height: 170px;
+    width: 100%;
+}
+.city{
+    font-size: 65px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+   
+}
+.restaurantName{
+    color: white;
+    font-family: "Rakkas", serif;
+}
+.category,.dineStyle{
+    clear: both;
+    font-family: "Rakkas", serif;
+}
+.category{
+    margin-top: 55px;
+    font-size: 45px;
+}
+.places{
+    box-shadow: 10px 5px 5px #DCE4C9;
+    list-style: none;
+    height: 350px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    background-color: #798645;
+    border-radius: 10px;
+    float: left;
+  }
+  .places:hover{
+    height: 400px;
+    width: 50%;
+    font-size: 50px;
+    color:  #798645;
+    background-color: #626F47;
+    cursor: pointer;
+  }
+  .info{
+    margin: 3px;
+    color: white;
+    font-size: 20px;
+
+  }
+  .info:hover{
+    font-size: 30px;
+    cursor: pointer;
+  }
+.fa-heart,.fa-trash-o{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 25px;
+}
+.fa-heart:hover,.fa-trash-o:hover{
+    color:black;
+    cursor: pointer;
+}
+#filterButton{
+    box-shadow: 10px 5px 5px #626F47;
+    text-align: center; 
+    text-decoration: none;
+    color: #626F47;
+    background: #F2EED7;
+    height: 50px;
+    width: 30%;
+    border-radius: 10px;
+    font-family: "Rakkas", serif;
+    font-size: 30px;
+    border: none;
+    margin: 20px;
+}
+#filterButton:hover{
+    box-shadow: 10px 5px 5px #F2EED7;
+    color:#F2EED7;
+    background: #626F47;
+    cursor: pointer;
+}
+.labelNames{
+    font-size: 20px;
+    margin-left: 5px;
+}
+.categoryNames{
+    font-size: 25px;
+    font-family: "Rakkas", serif;
+}
+.pickCategory{
+    font-family: "Rakkas", serif;
+
+}
+#refreshPage{
+    box-shadow: 10px 5px 5px #626F47;
+    text-align: center; 
+    text-decoration: none;
+    color: #626F47;
+    background: #F2EED7;
+    height: 40px;
+    width: 7%;
+    border-radius: 10px;
+    font-family: "Rakkas", serif;
+    font-size: 20px;
+    border: none;
+    margin: 20px;
+}
+#refreshPage:hover{
+    box-shadow: 10px 5px 5px #F2EED7;
+    color: #F2EED7;
+    background: #626F47;
+}
+ /* =====================================MAIN EJS ============================= */
+
+  
+  #bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the whole area */
+    z-index: -1; /* Sends the video behind other content */
+  }
+  
+  .content {
+    z-index: 1; /* Ensures content is on top of the video */
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 150px;
+  }
+
+header{
+    height: 200px;
+    margin: 20px auto auto auto;
+  
+}
+li{
+   list-style: none;
+   margin-bottom: 50px;
+   text-align: center;
+   float: left;
+   margin-left: 60px;
+}
+a{
+    box-shadow: 10px 5px 5px #626F47;
+    text-decoration: none;
+    background: #F2EED7;
+    color: #626F47;
+    height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Rakkas", serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+a:hover{
+    box-shadow: 10px 5px 5px #F2EED7;
+    color:#F2EED7;
+    background: #626F47;
+}
+h1{
+    font-size: 65px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-family: "Rakkas", serif;
+}
+p{
+    margin:0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color:white;
+    font-family: "Rakkas", serif;
+}
+.restaurantInput{
+    height: 50px;
+    width: 25%;
+    border: 2px solid #FF9C73;
+    border-radius: 10px;
+    text-align: center;
+    background: white;
+    font-family:"Potta One", system-ui;
+    color: #FF4545;
+}
+::placeholder{
+    color: #FF4545;
+}
+
+
+/* QUESTIONS */
+
+.middle{
+    height: 175px;
+    width: 100%;
+    margin-top: 20px;
+}
+h3{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.price{
+    box-shadow: 10px 5px 5px #DCE4C9;
+    height: 100px;
+    width: 30%;
+    background: #798645;
+    border-radius: 10px;
+    float: left;
+    margin-left: 30px;
+    margin-right: 50px;
+    color: white;
+}
+
+.food{
+    box-shadow: 10px 5px 5px #DCE4C9;
+    height: 100px;
+    width: 30%;
+    background: #798645;
+    border-radius: 10px;
+    float: left;
+    margin-right: 50px;
+    color: white;
+}
+.style{
+    box-shadow: 10px 5px 5px #DCE4C9;
+    height: 100px;
+    width: 30%;
+    background: #798645;
+    border-radius: 10px;
+    float: left;
+    color: white;
+}
+.filter{
+    
+    text-align: center;
+    clear: both;
+}
+/* MAIN SECTION */
+.cityPic{
+    margin-top: 20px;
+    height: 300px;
+    border-radius: 10px;
+}
+h2{
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+
+/*==================================== PROFILE EJS=============================*/
+.profile{
+    background: #FBD288;
+    text-align: center;
+    background-image: url('./images/pexels-donghuangmingde-3262277.jpg');
+    background-size: cover; /* Scale the image to cover the entire screen */
+    /* background-repeat: no-repeat;  */
+ 
+
+}
+.profileH1{
+    font-size: 70px;
+    color: #626F47;
+    background: #F2EED7;
+    box-shadow: 10px 5px 5px #626F47;
+    width: 50%;
+    border-radius: 10px;
+    margin: 10px auto 30px auto;  
+   
+}
+#goBackButton{
+    box-shadow: 10px 5px 5px #626F47;
+    text-decoration: none;
+    background: #F2EED7;
+    color: #626F47;
+    height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Rakkas", serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+#goBackButton:hover{
+    box-shadow: 10px 5px 5px #F2EED7;
+    color:#F2EED7;
+    background: #626F47;
+    cursor: pointer;
+}
+.homeBtn{
+    margin-bottom: 20px;
+}
+.noRestSaved{
+    position: relative;
+    margin-top: 90px;
+    color: white;
+}
+.profileLi{
+    height: 300px;
+    width: 30%;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 20px;
+    box-shadow: 10px 5px 5px #DCE4C9;
+    list-style: none;
+    height: 350px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    background-color: #798645;
+    border-radius: 10px;
+}
+.favName{
+    color:white;
+    font-family: "Rakkas", serif;
+}
+.favoritedRestaurants{
+    margin-top: 50px;
+}
+/* ===============================INDEX EJS =================================== */
+.btn-primary{
+    width: 30%;
+    font-family: "Rakkas", serif;
+    margin: auto;
+   display: block;
+   margin-bottom: 20px;
+   text-align: center;
+   background: #7F76E5;
+   font-size: 25px;
+}
+.title{
+    color: #7F76E5;
+
+}
+.container{
+    height: 400px;
+    width: 40%;
+    box-shadow: 10px 5px 5px #7F76E5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+}
+.signupContainer{
+    height: 560px;
+    width: 40%;
+    box-shadow: 10px 5px 5px gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+}
+.indexWords{
+    color: black;
+    font-family: "", serif;
+}
+/* ======================= Login EJS /Signup ejs =============================== */
+.btn-primary{
+    width: 40%;
+}
+/* .loginBody,.indexBody{
+    background: radial-gradient(red,orange);
+    height: 500px;
+ 
+
+} */
+
+/* =====================================MEDIA Q ==============================*/
+@media screen and (max-width:1241px) {
+    a,#goBackButton{
+        font-size: 15px;
+        height: 40px;
+    }
+}
+@media screen and (max-width:1205px) {
+    .price{
+        margin-left: 170px;
+    }
+    label{
+        font-size: 13px;
+    }
+    h3{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:1058px){
+   header{
+    height: 300px;
+   }
+    a,#goBackButton{
+        font-size: 15px;
+        height: 30px;
+        width: 55%;
+        margin-bottom: 20px;
+    }
+    .mainLogout{
+        margin-top: 70px;
+    }
+    .content{
+        margin-top: 200px;
+    }
+}
+@media screen and (max-width: 1007px){
+    .price,.food,.style{
+        height: 120px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 970px){
+    .price{
+        margin-left:100px;
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 800px){
+    .price{
+        margin-left: 70px;
+    }
+    .price,.food{
+        margin-right: 30px;
+    }
+    .price,.food,.style{
+        width: 25%;
+    }
+    label{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        height: 370px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 13px;
+    }
+    button{
+        width: 20%;
+    }
+    h3{
+        font-size: 13px;
+    }
+    li{
+        margin-left: 0;
+        width: 100%;
+    }
+    .price{
+        margin-left: 20px;
+    }
+    .price,.food{
+        margin-right: 20px;
+    }
+    .price,.food,.style{
+        width: 27%;
+        height: 130px;
+    }
+}

@@ -1,5 +1,9 @@
 <%- include('partials/header') -%>
-    <main class="container">
+<video autoplay loop muted id="bgVideo">
+  <source src="/videos/Light Red Light Green Gradient Color and Style Video Background.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+    <main class="signupContainer">
         <div class="row justify-content-center">
             <section class="col-6 mt-5">
                 <% if (locals.messages.errors) { %>
@@ -12,6 +16,7 @@
                         <div class="alert alert-info"><%= el.msg %></div>
                     <% }) %>    
                 <% } %>
+                <h2>Signup</h2>
                 <form action="/signup" method="POST">
                     <div class="mb-3">
                         <label for="userName" class="form-label">User Name</label>

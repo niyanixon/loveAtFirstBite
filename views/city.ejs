@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= cityData.city %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Permanent+Marker&family=Potta+One&family=Racing+Sans+One&family=Rakkas&family=Sarina&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="rest">
+  <header class="cityHeader">
+  <h1 class="city">Restaurants in <%= cityData.city %></h1>
+  <a href="/logout">Logout</a>
+  <a href="/main">Home</a>
+  <a href="/favorites">Profile</a>
+</header>
+<section class="middle">
+        <h2 class="pickCategory">PICK CATEGORIES</h2>
+        <section class="price">
+          <h3 class="categoryNames">PRICE RANGE</h3>
+          <input id="expensive" type="radio" name="price" value="$$$"><label class="labelNames" for="expensive">$$$</label>
+          <input id="midExprensive" type="radio" name="price" value="$$"><label  class="labelNames" for="midExprensive">$$</label>
+      </section>
+      
+      <section class="food">
+          <h3  class="categoryNames">FOOD CATEGORY</h3>
+          <input id="italian" type="radio" name="food" value="ITALIAN"><label  class="labelNames" for="italian">ITALIAN</label>
+          <input id="asian" type="radio" name="food" value="ASIAN"><label  class="labelNames" for="asian">ASIAN</label>
+          <input id="mexican" type="radio" name="food" value="MEXICAN"><label  class="labelNames" for="mexican">MEXICAN</label>
+      </section>
+      
+      <section class="style">
+          <h3  class="categoryNames">DINE STYLE</h3>
+          <input id="fine" type="radio" name="style" value="fine dining"><label  class="labelNames" for="fine">FINE DINE</label>
+          <input id="casual" type="radio" name="style" value="casual dining"><label  class="labelNames" for="casual">CASUAL DINE</label>
+      </section>
+      
+
+      <button id="filterButton">Filter</button> 
+      <button id="refreshPage">Refresh</button>
+
+      <ul id="restaurants-list">
+        <!-- Filtered restaurants will be shown here -->
+    </ul>
+    </section>
+    
+<% for (const [category, styles] of Object.entries(restaurants)) { %>
+  <h2 class="category"><%= category.charAt(0).toUpperCase() + category.slice(1) %> Restaurants</h2>
+
+  <% for (const [style, places] of Object.entries(styles)) { %>
+    <h3 class="dineStyle"><%= style.charAt(0).toUpperCase() + style.slice(1) %></h3>
+    <ul id="original-list" >
+      <% places.forEach(place => { %>
+        <li class="places">
+          <h2 class="restaurantName"><%= place.name %></h2>
+          <p id="price" class="info">Price: <%= place.price %></p>
+          <p id="category" class="info">Category: <%= place.category %></p>
+          <p id="style" class="info">Style: <%= place.style %></p>
+          <p id="description" class="info">Description: <%= place.description %></p>
+          <i aria-hidden="true" class="fa fa-heart" data-place="<%= JSON.stringify(place) %>"></i>
+        </li>
+      <% }) %>
+    </ul>
+  <% } %>
+<% } %>
+
+ <script src="/main.js"></script>
+
+</body>
+   
+</html>

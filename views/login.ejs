@@ -1,5 +1,9 @@
 <%- include('partials/header') -%>
-
+<body class="loginBody">
+  <video autoplay loop muted id="bgVideo">
+    <source src="/videos/Light Red Light Green Gradient Color and Style Video Background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 <main class="container">
   <div class="row justify-content-center">
     <section class="col-6 mt-5">
@@ -9,6 +13,7 @@
       messages.info.forEach( el => { %>
       <div class="alert alert-info"><%= el.msg %></div>
       <% }) %> <% } %>
+      <h2>Welcome Back!</h2>
       <form action="/login" method="POST">
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label"
@@ -36,5 +41,5 @@
     </section>
   </div>
 </main>
-
+</body>
 <%- include('partials/footer') -%>
